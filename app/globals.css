@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -13,6 +11,362 @@ body {
 .main-login-page,
 .main-signup-page {
   background-image: url(/images/Eighteen.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-h1 {
+  text-align: center;
+  color: whitesmoke;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+form {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.027);
+  /* background-color: rgba(0, 0, 0, 0.562); */
+  box-shadow: 1px 1px 20px rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+label {
+  font-weight: 600;
+  color: whitesmoke;
+  display: block;
+}
+
+input {
+  width: 300px;
+  display: block;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.377);
+  height: 40px;
+  border-radius: 6px;
+  color: rgb(192, 192, 192);
+}
+
+.btn {
+  text-align: center;
+}
+
+.f-but {
+  background-color: rgba(255, 217, 0, 0.575);
+  padding: 8px;
+  color: whitesmoke;
+  border-radius: 50%;
+  width: 300px;
+  font-weight: 800;
+}
+
+.f-but:hover {
+  background-color: yellow;
+  color: rgb(0, 0, 0);
+}
+
+.f-but:active {
+  background-color: yellow;
+  color: whitesmoke;
+}
+
+span {
+  color: blue;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.dont {
+  text-align: center;
+}
+
+/* Header navbar code */
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  /* border: 2px solid red; */
+  background-color: rgb(4 78 131);
+  position: sticky;
+  top: 0.1px;
+}
+
+.logo {
+  margin-top: 10px;
+  height: 50px;
+}
+
+.navbar-h2 {
+  font-size: 19px;
+  font-weight: 700;
+  color: rgb(185 216 243);
+}
+
+ul {
+  color: white;
+  gap: 6;
+  display: flex;
+  margin: 10px;
+  font-size: 13px;
+}
+
+li:active {
+  color: whitesmoke;
+  background-color: black;
+  transition: 0.1s;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+@media (max-width: 750px) {
+  ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+    background-color: rgb(4 78 131);
+    position: absolute;
+    top: 50px;
+    right: 0;
+    border-radius: 4px;
+  }
+
+  ul.active {
+    display: flex;
+  }
+
+  ul li {
+    width: 100%;
+    border-radius: 15px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    margin-right: 20px;
+  }
+
+  li:hover {
+    background-color: rgba(0, 0, 0, 0.267);
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 580px) {
+  .navbar-h2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  .navbar-h2 {
+    font-size: 10px;
+  }
+}
+
+/* Hero code */
+header {
+  /* border: 1px solid rgb(255, 0, 0); */
+  display: flex;
+  padding: 35px 50px;
+  justify-content: center;
+  background-image: url(/images/bg_house.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 50;
+}
+
+.div-one {
+  /* border: 1px solid blue; */
+  margin: 0;
+  width: 50%;
+  height: 90%;
+}
+
+.div-two {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  height: 90%;
+}
+
+.head-one {
+  font-size: 45px;
+  margin-top: 20px;
+  font-weight: 800;
+  color: rgb(4 78 131);
+}
+
+.head-two {
+  font-size: 35px;
+  color: rgb(4 78 131);
+}
+
+.cloud-applied {
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  line-height: 50px;
+  color: rgb(46 182 232);
+}
+
+.earn-up,
+.now-admission {
+  margin-top: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: rgb(4 78 131);
+  font-weight: 700;
+}
+
+.head-last {
+  /* border: 1px solid red; */
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+}
+
+.web-btn {
+  color: whitesmoke;
+  font-weight: 600;
+  background-color: rgb(4 78 131);
+  width: 170px;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  display: block;
+}
+
+.web-btn:hover {
+  /* background-color: rgba(4, 78, 131, 0.801) */
+  filter: drop-shadow(-0px -0px 5px rgb(0, 0, 0));
+}
+
+.five-six-two {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.head-lastest {
+  justify-content: center;
+  text-align: center;
+  color: rgb(4 78 131);
+}
+
+.cover {
+  width: 670px;
+
+  /* border: 1px solid red; */
+}
+
+.cover-img {
+  margin-top: 20px;
+  width: 700px;
+  height: 540px;
+}
+
+@media (max-width: 780px) {
+  header {
+    flex-direction: column;
+  }
+
+  .div-one {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: larger;
+  }
+
+  .head-last,
+  .head-lastest {
+    text-align: center;
+    font-size: large;
+    width: 100%;
+  }
+
+  .div-two {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* ......................header/main is end and start section................  */
+section {
+  padding: 10px 40px;
+}
+
+.section-head-one {
+  margin-top: 50px;
+  justify-content: center;
+  text-align: center;
+  color: rgb(4 78 131);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.section-pera-one {
+  margin-top: 40px;
+  font-weight: 500;
+}
+
+.inf-img {
+  border-radius: 8px;
+  z-index: -1;
+  filter: drop-shadow(2px 10px 15px black);
+}
+
+@media (max-width: 970px) {
+  /* border: 1px solid red; */
+  .infor-img {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .inf-img {
+    flex-wrap: wrap;
+    max-width: 80%;
+    max-height: 300px;
+    padding: 10px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+
+/* this code is main login/signup page.tsx */
+
+.main-login-page,
+.main-signup-page {
+  background-image: url(../public/images/Eighteen.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -50,7 +404,7 @@ input {
   border-radius: 6px;
   color: rgb(192, 192, 192);
 }
-.btn {
+.btn-f {
   text-align: center;
 }
 .f-but {
@@ -76,210 +430,4 @@ span {
 }
 .dont {
   text-align: center;
-}
-
-
-/* Header navbar code */
-.nav-bar{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  /* border: 2px solid red; */
-  background-color: rgb(4 78 131);
-  position: sticky;
-  top: 0.1px;
-}
-.logo{
-  margin-top: 10px;
-  height: 50px;
-}
-.navbar-h2{
-  font-size: 19px;
-  font-weight: 700;
-  color: rgb(185 216 243);
-}
-ul{
-  color: white;
-  gap: 6;
-  display: flex;
-  margin: 10px;
-  font-size: 13px;
-}
-li:active {
-  color: whitesmoke;
-  background-color: black;
-  transition: 0.1s;
-}
-
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: #ffffff;
-}
-@media (max-width: 750px) {
-  ul {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    width: 30%;
-    background-color: rgb(4 78 131);
-    position: absolute;
-    top: 50px;
-    right: 0;
-    border-radius: 4px;
-  }
-  ul.active {
-    display: flex;
-  }
-  ul li {
-    width: 100%;
-    border-radius: 15px;
-    height: 20px;
-    color: white;
-    text-align: center;
-    margin: 5px;
-    margin-right: 20px;
-  }
-  li:hover {
-    background-color: rgba(0, 0, 0, 0.267);
-  }
-  .hamburger {
-    display: block;
-  }
-
-}  
-@media(max-width: 580px){
-  .navbar-h2{
-    font-size: 14px;
-  }
-}
-@media(max-width: 350px){
-  .navbar-h2{
-    font-size: 10px;
-  }
-}
-
-/* Hero code */
-header{
-  border-bottom: 1px solid rgba(160, 160, 160, 0.171);
-  display: flex;
-  padding: 0px 100px;
-  justify-content: center;
-  background-image: url(/images/bg_house.jpg);
-  background-position: center;
-  background-size: cover;
-  opacity: 50;
-  
-}
-.div-one{
-  padding: 35px;
-}
-
-.div-one{
-  /* border: 1px solid blue; */
-  margin: 0;
-
-  width: 50%;
-  height: 90%;
-
-}
-.div-two{
-  padding: 0;
-  margin: 0;
-  width: 50%;
-  height: 90%;
-}
-.head-one{
-  font-size: 45px;
-  margin-top: 20px;
-  font-weight: 800;
-  color: rgb(4 78 131);
-}
-.head-two{
-  font-size: 35px;
-  color: rgb(4 78 131);
-}
-.cloud-applied{
-  font-size: 38px;
-  font-weight: 900;
-  margin: 0;padding: 0;
-  line-height: 50px;
-  color: rgb(46 182 232);
-}
-.earn-up, .now-admission{
-  margin-top: 10px;
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: rgb(4 78 131);
-  font-weight: 700;
-}
-.head-last{
-  /* border: 1px solid red; */
-  margin-top: 25px;
-  display: flex;
-  justify-content: space-between;
-  width: 380px;
-}
-.web-btn{
-  color: whitesmoke;
-  font-weight: 600;
-  background-color: rgb(4 78 131);
-  width: 170px;
-  padding: 15px;
-  border-radius: 5px;
-  border: none;
-}
-.web-btn:hover{
-  /* background-color: rgba(4, 78, 131, 0.801) */
-  filter: drop-shadow(-0px -0px 5px rgb(0, 0, 0));
-}
-.five-six-two{
-font-weight: 900;
-font-size: 20px;
-}
-.head-lastest{
-  justify-content: center;
-  text-align: center;
-  color: rgb(4 78 131);
-}
-.cover{
-  width: 670px;
-
-  /* border: 1px solid red; */
-}
-.cover-img{
-  margin-top: 20px;
-  width: 700px;
-  height: 540px;
-}
-/* ......................header/main is end and start section................  */
-section{
-  height: 200vh;
-  /* border: 1px solid red; */
-  padding: 10px 40px;
-}
-.section-head-one{
-  margin-top: 50px;
-  justify-content: center;
-  text-align: center;
-  color: rgb(4 78 131);
-  font-size: 30px;
-  font-weight: 900;
-}
-.section-pera-one{
-  margin-top: 40px;
-  font-weight: 500;
-  /* justify-content: center; */
-  /* text-align: center; */
-
-  
-}
-.inf-img{
-  border-radius: 8px;
-  z-index: -1;
-  filter: drop-shadow(2px 10px 15px black);
 }
