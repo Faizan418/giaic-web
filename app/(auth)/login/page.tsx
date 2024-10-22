@@ -1,7 +1,7 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 
-export default function login() {
+export default function Login() {
   return (
     <div className="main-login-page">
       <form action="form">
@@ -29,7 +29,7 @@ export default function login() {
 
         <div className="dont">
           <h2>
-            Don't have an account?
+            Don&apos;t have an account?
             <Link href="/signup">
               <span>Sign-Up</span>
             </Link>
@@ -38,13 +38,9 @@ export default function login() {
         </div>
 
         <div className="btn-f">
-          <Link href="/">
-            <button className="f-but" type="submit">Login</button>
-          </Link>
+          <button className="f-but" type="submit">Login</button>
         </div>
       </form>
     </div>
-  )
+  );
 }
-
-
