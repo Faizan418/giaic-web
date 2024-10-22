@@ -29,7 +29,7 @@ export default function Login() {
 
         <div className="dont">
           <h2>
-            Don&apos;t have an account?
+            Don&apos;t have an account?{" "}
             <Link href="/signup">
               <span>Sign-Up</span>
             </Link>

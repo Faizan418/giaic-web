@@ -6,12 +6,12 @@ export default function Hero() {
     <div>
       <header>
         <div className="house"></div>
+
         <div className="div-one">
           <h1 className="head-one">Governor Sindh</h1>
           <h1 className="head-two">Kamran Khan Tessori</h1>
           <h2 className="cloud-applied">
-            Certified Cloud <br /> Applied Generative AI <br /> Engineer (
-            GenEng )
+            Certified Cloud <br /> Applied Generative AI <br /> Engineer (GenEng)
           </h2>
           <p className="earn-up">Earn up to $5,000 / month</p>
           <p className="now-admission">
@@ -19,7 +19,7 @@ export default function Hero() {
           </p>
 
           <div className="head-last">
-            <a href="https://www.governorsindh.com/apply">
+            <a href="https://www.governorsindh.com/apply" target="_blank" rel="noopener noreferrer">
               <button className="web-btn" type="button">
                 Apply Now
               </button>
@@ -36,52 +36,40 @@ export default function Hero() {
             <Image
               className="cover-img"
               src="/images/cover.png"
-              alt="logo"
+              alt="Cover image showcasing program details"
               width={1700}
               height={1800}
             />
           </div>
         </div>
       </header>
+
       <section>
         <h1 className="section-head-one">
-          Certified Cloud Applied Generative AI Engineer (GenEng) and
-          Solopreneur Developing Billion-Dollar Valued Developers and
-          Solopreneurs
+          Certified Cloud Applied Generative AI Engineer (GenEng) and Solopreneur Developing Billion-Dollar Valued Developers and Solopreneurs
         </h1>
         <p className="section-pera-one text-justify">
-          The pace of technological change is accelerating, big players like
-          Microsoft, Amazon, Google, and OpenAI are winning by providing
-          infrastructure, large AI foundation models, frameworks, 3D Metaverse
-          experiences, and massive distribution networks. Solopreneurs trained
-          in this program will win by automating work typically outsourced to
-          employees, by directly connecting to customers by eliminating the
-          middleman, and by developing vertical metaverses, thus paving the way
-          for the first billion-dollar valued solopreneur businesses. This
-          program has the objective to train this new breed of billion-dollar
-          solopreneurs. These solopreneurs will adopt the ultra-lean business
-          model and work independently and will not need to hire employees or
-          other team members...
+          The pace of technological change is accelerating, big players like Microsoft, Amazon, Google, and OpenAI are winning by providing infrastructure, large AI foundation models, frameworks, 3D Metaverse experiences, and massive distribution networks...
         </p>
 
         <div className="infor-img flex m-10 gap-8 text-center justify-center">
           <Image
             src="/images/infor-img1.png"
-            alt="logo"
+            alt="Information about the first part of the program"
             width={300}
             height={100}
             className="inf-img"
           />
           <Image
             src="/images/infor-img2.png"
-            alt="logo"
+            alt="Information about the second part of the program"
             width={300}
             height={100}
             className="inf-img"
           />
           <Image
             src="/images/infor-img3.png"
-            alt="logo"
+            alt="Information about the third part of the program"
             width={300}
             height={100}
             className="inf-img"
@@ -91,14 +79,14 @@ export default function Hero() {
         <div className="infor-img flex m-10 gap-10 text-center justify-center">
           <Image
             src="/images/infor-img4.png"
-            alt="logo"
+            alt="Detailed information section"
             width={465}
             height={400}
             className="inf-img"
           />
           <Image
             src="/images/infor-img5.png"
-            alt="logo"
+            alt="Another section with detailed information"
             width={465}
             height={400}
             className="inf-img"
